@@ -1,3 +1,5 @@
+//Beginner, Middle and End Button queries.
+
 const oneBtn = 
 document.querySelector('#begButt');
 console.log(oneBtn);
@@ -9,10 +11,10 @@ console.log(twoBtn);
 const threeBtn =
 document.querySelector('#butt3');
 console.log(threeBtn);
-
+//Practising the spin function on the circles.
 const boxeS = document.querySelector('#startspin');
 console.log(boxeS)
-
+//Potentially for mobile viewing
 const removeImg = 
 document.querySelectorAll('img#start.boxes');
 console.log(removeImg);
@@ -30,26 +32,16 @@ console.log(show10)
 
 
 
-//const beginning = document.querySelector('#begBut');
-//console.log(beginning)
-//function popBox() {
- //   alert("I am an alert box!");
-//  }
- // beginning.addEventListener('mouseover', popBox);
 
- //const swap = document.querySelector('#start');
- //console.log(swap)
  function spiN() {
     boxeS.classList.add('on');
  }
 
-
+//Displaying the transitional circles.
 function switcH() {
     //const moveIT = show1.style.display = 'block';
     document.getElementById("sox").style.display = 'block';
-    
-    
-  }
+}
   
 function switcH2() {
     document.getElementById("circle2").style.display = 'block';
@@ -57,13 +49,13 @@ function switcH2() {
 function switcH3() {
     document.getElementById("circle3").style.display = 'block';
 }
-
+// Booking form display.
 function booking1 () {
  document.getElementById("Booking_form").style.display = 'block';
 
 }
 
-
+//Event Listeners.
   oneBtn.addEventListener('click', switcH);
   //oneBtn.addEventListener('click', spiN);
   twoBtn.addEventListener('click', switcH2);
@@ -75,7 +67,7 @@ function booking1 () {
   book2.addEventListener('click', booking1);
   book3.addEventListener('click', booking1);
 
-  
+  //Cross for Booking form.
  const cross = document.querySelector('#menu-close');
  console.log(cross);
 
@@ -83,14 +75,8 @@ function booking1 () {
   function close () {
    document.getElementById("Booking_form").style.display = 'none';
   }
-
-  
-  
-  //cross.addEventListener('click', close);*/
-  
-
-
-// alert('end');
+ //Setting up the form submissions:
+ //Reference: https://www.freecodecamp.org/news/how-to-submit-a-form-with-javascript/ 
 
 let namE = document.getElementById("name");
 console.log(namE);
@@ -101,8 +87,6 @@ let bookinG = document.getElementById("Booking_form");
 
 bookinG.addEventListener("submit", (e) => {
   e.preventDefault();
-  
-  
 });
 
   let username = document.getElementById("name");

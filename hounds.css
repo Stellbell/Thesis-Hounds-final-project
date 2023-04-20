@@ -1,65 +1,68 @@
 * {
   box-sizing: border-box;
 }
-
+/*weather widget*/
 @media (max-width: 700px) {
   #m-booked-bl-simple-25232 {
-    display: none; 
+    display: none;
   }
 }
 
 
 header {
-    width: 100%;
-    height: 120px;
-    background: rgb(54, 149, 227);
-    /*linear-gradient(to right, orange , yellow, green, purple, blue, violet);*/
-   opacity: 1;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   
+  width: 100%;
+  height: 120px;
+  background: rgb(54, 149, 227);
+  /*linear-gradient(to right, orange , yellow, green, purple, blue, violet);*/
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 
 
 .logo-image {
-  display:flex;
+  display: flex;
   position: relative;
   left: -10px;
   height: 100%;
 
 }
+
 @media (max-width: 700px) {
   .logo-image {
-    height:40%;
+    height: 40%;
   }
 }
 
 .logo {
-  
-    height: 40%;
-    
+
+  height: 40%;
+
 }
 
 
-.Title{ 
-  color:rgb(255, 255, 255);
+.Title {
+  color: rgb(255, 255, 255);
   font-size: 50px;
   /*font-family: 'Roboto', sans-serif;*/
   font-family: 'Kalam', cursive;
-  
-  }
-  @media (max-width: 700px) {
-    .Title {
-      color: red;
-      font-size:200%;
 
-    }
+}
+
+@media (max-width: 700px) {
+  .Title {
+    color: red;
+    font-size: 200%;
+
   }
+}
+
 .catch-line {
-  color:rgb(255, 255, 255);
-  position:relative;
+  color: rgb(255, 255, 255);
+  position: relative;
   bottom: -40px;
   left: -200px;
   font-style: italic;
@@ -73,8 +76,8 @@ header {
 }
 
 h2 {
-    position: relative;
-    bottom: -100px;
+  position: relative;
+  bottom: -100px;
 
 }
 
@@ -84,67 +87,74 @@ h2 {
 .grid {
   display: grid;
   justify-content: space-around;
-  grid-template-columns:.5fr .5fr .5fr;
+  grid-template-columns: .5fr .5fr .5fr;
   grid-template-rows: auto auto;
   column-gap: 100px;
-  
+
   row-gap: 200px;
-  
-  
+
+
 }
+
 @media (max-width: 700px) {
   .grid {
-    grid-template-columns:.3fr;
-    grid-template-rows: auto ;
-    
+    grid-template-columns: .3fr;
+    grid-template-rows: auto;
+
   }
 }
+
 /*main {
   border-color: blue;
   border-style: solid;*/
 
 
 @keyframes spinme {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0);
   }
 
-@keyframes spin3D {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate3d(1, 1, 1, 360deg);;
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-  
-  .boxes {
-    display: block;
-    width: 335px;
-    height: 335px;
-    border-radius: 50%;
-    border-width: 20px;
-    
-    
-    /*border-color: rgb(244, 243, 245);
+
+@keyframes spin3D {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+    ;
+  }
+}
+
+.boxes {
+  display: block;
+  width: 335px;
+  height: 335px;
+  border-radius: 50%;
+  border-width: 20px;
+
+
+  /*border-color: rgb(244, 243, 245);
     
     
     border-style: solid;*/
 
+}
+
+@media (max-width: 700px) {
+  .boxes {
+    width: 100%;
+    height: 100%;
+    border-color: aqua;
+    border-width: 2px;
+    border-style: solid;
   }
-    @media (max-width: 700px) {
-      .boxes{
-        width: 100%;
-        height: 100%;
-        border-color: aqua;
-        border-width: 2px ;
-        border-style: solid;
-      }
-    }
+}
+
 /*#startspin.on {
         
         animation: spinme 3s;
@@ -152,7 +162,7 @@ h2 {
         animation-timing-function: linear;
     }*/
 
-
+/* Lots of circle formatting info links for future*/
 /*.circle {
     --s:450px; Size of the circle 
   --p:15px;   padding 
@@ -162,7 +172,7 @@ h2 {
   border-radius: 50%;
   
 }*/
- /*.circle {  
+/*.circle {  
 word-wrap: break-word;
 
 
@@ -176,7 +186,7 @@ word-wrap: break-word;
     
 }*/
 /*https://stackoverflow.com/questions/41656051/wrap-text-inside-a-circular-div*/
- /* *.writing {
+/* *.writing {
     position: absolute;
   width: inherit;
   height: auto;
@@ -186,7 +196,7 @@ word-wrap: break-word;
   word-wrap: break-word;
   }*/
 
- /*.circle ,
+/*.circle ,
 .circle::before {
   content: '';
   float: left;
@@ -199,33 +209,35 @@ word-wrap: break-word;
   float: right;
   shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
 }*/
- p {
-    text-align: center;
+p {
+  text-align: center;
 }
 
 
-  
+
 
 body {
-  
+
   background-image: no-repeat;
   background-image: url(./pawprint.jpg);
-  
-  
-  
-  
+
+
+
+
 }
+
 @media (max-width: 700px) {
   body {
-     
+
     width: 300%;
   }
 }
 
 
-main,nav {
-    max-width: 960px;
-    margin: 0 auto;
+main,
+nav {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 
@@ -235,38 +247,38 @@ main,nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
-  
+
+
   width: 1000px;
   height: 100px;
-    
+
 }
 
 
 
 .nav-links {
   display: flex;
-  
+
   justify-content: flex-end;
   align-items: center;
 }
 
 .nav-links a {
-    padding: 30px;
-    font-size: 22px;
-    
-    color:rgb(241, 240, 235);
-    
+  padding: 30px;
+  font-size: 22px;
 
- 
+  color: rgb(241, 240, 235);
+
+
+
 
 }
 
 
 .nav-links a:hover {
-    padding: 5 20px;
-    background: #09026f;
-    cursor: pointer;
+  padding: 5 20px;
+  background: #09026f;
+  cursor: pointer;
 
 }
 
@@ -276,273 +288,286 @@ main,nav {
 
 .dropdown a {
 
-    display: block;
-    position: relative;
-    cursor: pointer;
+  display: block;
+  position: relative;
+  cursor: pointer;
 }
 
 .sub-menu {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    min-width: 20%;
-    padding: 15px 0;
-    position: absolute;
-    font-size: 90px;
-    
-  
-    
-    
+  display: none;
+  position: absolute;
+  z-index: 1;
+  min-width: 20%;
+  padding: 15px 0;
+  position: absolute;
+  font-size: 90px;
+
+
+
+
 }
 
 .sub-menu a {
-    
-    font-size: 18px;
-  
 
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  font-size: 18px;
+
+
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
 .sub-menu a:hover {
-    background-color: #0a034e;
+  background-color: #0a034e;
 }
 
 .dropdown:hover .sub-menu {
-    display: block;
-    background: linear-gradient(to right, rgb(18, 3, 103) , blue, rgb(244, 241, 244));
-   
-}
-/*.puppy {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}*/
+  display: block;
+  background: linear-gradient(to right, rgb(18, 3, 103), blue, rgb(244, 241, 244));
 
-  @media (max-width: 700px) {
-    .nav-links a {
-      color: red;
-      font-size: 20px;
-    }
-    .nav-links {
-      color: red;
-      font-size: 25px;
-    }
-    
-    
-  
-   
- }
+}
+
+
+@media (max-width: 700px) {
+  .nav-links a {
+    color: red;
+    font-size: 20px;
+  }
+
+  .nav-links {
+    color: red;
+    font-size: 25px;
+  }
+
+
+
+
+}
 
 
 
 
 .button {
-    padding: 10px;
-    background-color: #f60f17;
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
-    text-align: center;
-    width: 200px;
-    margin: 15px auto;
-    transition: 0.4s ease-in-out;
-    z-index: 1;
+  padding: 10px;
+  background-color: #f60f17;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  width: 200px;
+  margin: 15px auto;
+  transition: 0.4s ease-in-out;
+  z-index: 1;
 }
 
 
 .button:hover {
-  background: darkblue; 
+  background: darkblue;
   -webkit-background-clip: ;
   -webkit-text-fill-color: transparent;
-  };
+}
+
+;
 
 
 footer {
-    height: 110px;
-    
-    width: cover    ;
-    color: rgb(37, 3, 130);
-    z-index: 1;
-    
-   
+  height: 110px;
+
+  width: cover;
+  color: rgb(37, 3, 130);
+  z-index: 1;
+
+
 }
-/*.footy {
-    height:100px;
-    width: 100px;
 
-    
-    
-}*/
+
 @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    /*100% {
-      opacity: 0;
-    }*/
+  0% {
+    opacity: 0;
   }
-  @keyframes fade-out {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    /*100% {
-      opacity: 0;
-    }*/
-  }
-  
 
+  50% {
+    opacity: 1;
+  }
+
+  /*100% {
+      opacity: 0;
+    }*/
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  /*100% {
+      opacity: 0;
+    }*/
+}
+
+/*https://devdojo.com/temani-afif/wrapping-text-inside-a-circular-shape
+Great link for wrapping text in circles.
+*/
 div.box {
-    --s:335px;  /*Size of the circle */
-    --p:5px;  /* padding */
-  
-    height: var(--s);
-    width:  var(--s);
-    border-radius: 50%;
-    background:linear-gradient(to right, orange , rgb(231, 231, 215), rgb(238, 188, 130));
-    position: absolute;
-    top: 26%;
-    right: 68.5%;
-    display: none;
-    animation: fade-in 20s;
-    
-    animation-iteration-count: 10s;
-    font-size: large;
-    font-weight: 700;
-    
-    
-    
+  --s: 335px;
+  /*Size of the circle */
+  --p: 5px;
+  /* padding */
 
-    
-  }
-  .box i,
-  .box::before {
-    content: '';
-    float: left;
-    height:100%;
-    width: 50%;
-    shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
-    
-  }
-  .box i {
-    float: right;
-    shape-outside: radial-gradient(farthest-side at left,  transparent calc(100% - var(--p)), #fff 0);
-  }
+  height: var(--s);
+  width: var(--s);
+  border-radius: 50%;
+  background: linear-gradient(to right, orange, rgb(231, 231, 215), rgb(238, 188, 130));
+  position: absolute;
+  top: 26%;
+  right: 68.5%;
+  display: none;
+  animation: fade-in 20s;
+
+  animation-iteration-count: 10s;
+  font-size: large;
+  font-weight: 700;
+
+
+
+
+
+}
+
+.box i,
+.box::before {
+  content: '';
+  float: left;
+  height: 100%;
+  width: 50%;
+  shape-outside: radial-gradient(farthest-side at right, transparent calc(100% - var(--p)), #fff 0);
+
+}
+
+.box i {
+  float: right;
+  shape-outside: radial-gradient(farthest-side at left, transparent calc(100% - var(--p)), #fff 0);
+}
+
+#circle2 {
+  position: absolute;
+  top: 26%;
+  right: 38.3%;
+  display: none;
+  animation: fade-in 20s;
+
+  animation-iteration-count: 10s;
+
+
+
+
+}
+
+@media (max-width: 700px) {
   #circle2 {
-    position: absolute;
-    top: 26%;
-    right: 38.3%;
     display: none;
-    animation: fade-in 20s;
-    
-    animation-iteration-count: 10s;
-    
-    
-    
+    position: absolute;
+    right: -200px;
+    top: 700px;
+    opacity: .5;
+  }
+}
 
-  }
-  @media (max-width: 700px) {
-    #circle2  {
-      display:none;
-      position: absolute;
-      right: -200px;
-      top: 700px;
-      opacity: .5;
-    }
-  }
+#circle3 {
+  position: absolute;
+  top: 26%;
+  right: 8.2%;
+  animation: fade-in 20s;
+
+  animation-iteration-count: 10s;
+  display: none;
+
+
+}
+
+@media (max-width: 700px) {
   #circle3 {
-    position: absolute;
-    top: 26%;
-    right: 8.2%;
-    animation: fade-in 20s;
-    
-    animation-iteration-count: 10s;
     display: none;
-    
-
-  }
-  @media (max-width: 700px) {
-    #circle3  {
-      display:none;
-      position: absolute;
-      right: -200px;
-      top: 1200px;
-      opacity: .5;
-    }
-  }
-
-  #circle4 {
-    
-    
-    display: block;
     position: absolute;
-    top: 810px;
-    right: 990px;
-    z-index: 0;
-
-    
+    right: -200px;
+    top: 1200px;
+    opacity: .5;
   }
-  #circle5 {
-    
-    
-    display: block;
-    position: absolute;
-    top: 810px;
-    right: 550px;
-    z-index: 0;
+}
 
-    
-  }
+#circle4 {
+
+
+  display: block;
+  position: absolute;
+  top: 810px;
+  right: 990px;
+  z-index: 0;
+
+
+}
+
+#circle5 {
+
+
+  display: block;
+  position: absolute;
+  top: 810px;
+  right: 550px;
+  z-index: 0;
+
+
+}
+
+#circle6 {
+
+
+  display: block;
+  position: absolute;
+  top: 810px;
+  right: 116px;
+  z-index: 0;
+
+
+}
+
+@media (max-width: 700px) {
   #circle6 {
-    
-    
-    display: block;
+
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #sox {
+    display: none;
     position: absolute;
-    top: 810px;
-    right: 116px;
-    z-index: 0;
-
-    
+    right: -200px;
+    opacity: .5;
   }
-  @media (max-width: 700px) {
-    #circle6 {
+}
 
-      display: none;
-    }
-  }
-  @media (max-width: 700px) {
-    #sox  {
-      display: none;
-      position: absolute;
-      right: -200px;
-      opacity: .5;
-    }
-  }
-
-  /*.library {
+/*.library {
     background: url(/library-bookshelf.jpg);
     background: cover no-repeat;
     height: 400px;
     
     
   }*/
- .libpic {
-  width:100%;
+.libpic {
+  width: 100%;
   height: 70%;
   position: absolute;
   top: 700px;
   opacity: .5;
   z-index: -1;
- }
+}
 
- @media (max-width: 700px) {
+@media (max-width: 700px) {
   .libpic {
 
     position: absolute;
@@ -556,19 +581,22 @@ div.box {
 
 
 
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    /*100% {
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  /*100% {
       opacity: 0;
     }*/
-  }
-  /*#bite {
+}
+
+/*#bite {
     animation: fade-in 10s;
     animation-iteration-count: 1;
     animation: spin3D 3s;
@@ -577,28 +605,28 @@ div.box {
     z-index: 1;
 
   }*/
-  #Booking_form {
-    display: none;
-    background-color: rgb(15, 202, 227);
-    width: 50%;
-    height:50%;
-    border-color:aquamarine ;
-    box-sizing: border-box;
-    position: absolute;
-    top: 600px;
-    right: 700px;
-  }
+#Booking_form {
+  display: none;
+  background-color: rgb(15, 202, 227);
+  width: 50%;
+  height: 50%;
+  border-color: aquamarine;
+  box-sizing: border-box;
+  position: absolute;
+  top: 600px;
+  right: 700px;
+}
 
-  @media (max-width: 700px) {
-    #Booking_form {
-  
-      top: 300%;
-      right: 700%;
-    }
+@media (max-width: 700px) {
+  #Booking_form {
+
+    top: 300%;
+    right: 700%;
+  }
+}
 
   .crosS {
-   position:absolute;
-   right: 6px;
-   top: 1px
-   
+    position: absolute;
+    right: 6px;
+    top: 1px
   }
